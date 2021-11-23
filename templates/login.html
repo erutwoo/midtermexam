@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Login</title>
+        <link rel="stylesheet" href="{{ url_for('static',filename='style.css')}}">
+    </head>
+    <body></br></br></br></br></br>
+        <div align="center">
+        <div align="center" class="border">
+        <div class="header">
+            <h1 class="word">Login</h1>
+        </div></br></br></br>
+            <form action="{{url_for('login')}}" method = "POST">
+                <div class="msg">Midterm Legaspi</div>
+                <input id="username" name="username" type="text" placeholder="Enter your Username" class="textbox"/></br></br>
+                <input id="password" name="password" type="password" placeholder="Enter your password" class="textbox"/></br></br></br>
+                <input type="submit" name="submit" class="btn" value="Sign In"/></br></br>
+                <a href="{{url_for('register')}}">Sign Up</a>
+            </form>
+        </div>    
+        </div>
+    </body>
+</html>
