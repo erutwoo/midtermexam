@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Registration</title>
+        <link rel="stylesheet" href="{{ url_for('static',filename='style.css')}}">
+    </head>
+    <body></br></br></br></br></br>
+        <div align="center">
+        <div align="center" class="border">
+        <div class="header">
+            <h1 class="word">Registration</h1>
+        </div></br></br></br>
+            <form action="{{url_for('register')}}" method = "post">
+                <div class="msg">Midterm Legaspi</div>
+                <input id="firstname" name="firstname" type="text" placeholder="Enter your Firstname" class="textbox"/></br></br>
+                <input id="lastname" name="lastname" type="text" placeholder="Enter your Lastname" class="textbox"/></br></br>
+                <input id="username" name="username" type="text" placeholder="Enter your Username" class="textbox"/></br></br>
+                <input id="password" name="password" type="password" placeholder="Enter your password" class="textbox"/></br></br></br>
+                <input type="submit" class="btn" type="password" value="Register"/></br></br>
+            
+            </form>
+        </div>    
+        </div>
+    </body>
+</html>
